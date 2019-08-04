@@ -2,7 +2,7 @@
   <form #todoForm>
     <div class="form-group">
       <h1 class="text-center text-primary">
-        Game Listing
+        Add Game
       </h1>
       <div class="input-group-prepend">
         <input #input type="text" class="form-control" placeholder="Game to be added..." (keyup)="inputChange()" name="UserInput" id="UserInput" ng-bind-html="UserInput">
@@ -12,12 +12,18 @@
       </div>
     </div>
   </form>
-  <h1>
-    Game List
-  </h1>
-  <ul>
-    <li *ngFor="let game of games">
-      {{game}}
-    </li>
-  </ul>
 </div>
+
+<div class="container">
+  <div class = "list-group">
+    <h1 class="text-primary">
+      Game List
+    </h1>
+    <ul>
+      <li *ngFor="let game of games">
+        {{game}}
+      </li>
+    </ul>
+  </div>
+</div>
+
